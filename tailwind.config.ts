@@ -10,6 +10,12 @@ const config: Config = {
     extend: {
       colors: {
         primary: "#F0F0F0",
+        accent: "#575DCD",
+      },
+      fontFamily: {
+        fjalla: ["Fjalla One", "sans-serif"],
+        calistoga: ["Calistoga", "serif"],
+        cantarell: ["Cantarell", "sans-serif"],
       },
     },
   },
