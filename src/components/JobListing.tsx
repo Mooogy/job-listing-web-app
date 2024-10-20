@@ -1,8 +1,13 @@
-const JobListing = () => {
+type Job = {
+  role: string;
+  company_name: string;
+};
+
+const JobListing = ({ role, company_name }: Job) => {
   return (
-    <div className="bg-white font-cantarell w-full flex flex-col p-[0.5vw] h-1/5 rounded-lg cursor-pointer border-r-4 border-accent">
-      <span>Job Name</span>
-      <span>Job Company</span>
+    <div className="bg-white font-cantarell w-full flex flex-col p-[0.5vw] shrink-0 h-1/5 rounded-lg cursor-pointer border-r-4 border-accent">
+      <span>{role}</span>
+      <span>{company_name}</span>
     </div>
   );
 };
